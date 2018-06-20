@@ -1,0 +1,155 @@
+\documentclass[a4paper, 14pt]{article}
+
+\usepackage{soul}
+\usepackage{setspace}
+
+% package to change sections appearance
+\usepackage{titlesec}
+% package for lists
+\usepackage{enumitem}
+% reduce space before list
+\setlist{nolistsep}
+% package for inserting images
+\usepackage{graphicx}
+% package for hyperlinks
+\usepackage[colorlinks=true]{hyperref}
+
+
+
+% lists geometry
+\let\olditemize\itemize
+\renewcommand{\itemize}{
+  \olditemize
+  \setlength{\itemsep}{-8pt}
+  \setlength{\parskip}{-8pt}
+  \setlength{\parsep}{-8pt}
+}
+
+% line spacing
+\onehalfspacing
+
+% margins
+\usepackage[total={5in, 8.7in}]{geometry}
+
+% this is a global declaration that changes the appearance of the section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}
+% this is a global declaration that changes the appearance of the subsection command
+\titleformat{\subsection}{\tt\raggedright}{}{0em}{}
+
+\begin{document}
+\begin{center}
+	\textsc{\Huge{\so{Ivan Sergienko}}}
+\end{center}
+
+% photo (optional)
+%\begin{center}
+%  \includegraphics[width=130mm]{IvanSergienko.jpg}
+%\end{center}
+
+\section{Brief Summary}
+    I am a php \& js developer, and I like coding in Vim; writing clean, easy to read and understand code; using top-down design approach; solving interesting problems; making code run fast, refactoring. \\ 
+    \\
+    I have 1 year experience in a digital advertising agency as a php \& js developer, working on a social network, interactive vaccines calendar, facebook app, etc. \\
+    And also about 2 years experience of making sites on my own from time to time (not 40 hours/week :).
+
+\section{Projects brief Summary}
+\begin{itemize}
+    \item \url{http://swanepoel.zz.mu} - AngularJS app for calculating optical constants of thin films (developed by myself, as intern in institute of semiconductors)
+    \\
+    \item \url{http://darthvanger.0fees.net/fifteen-puzzle/web} - Fifteen puzzle game (developed by myself)
+    \\
+    \item \url{http://spyoptics.kiev.ua} - Tiny eShop on CodeIgniter (developed by myself)
+    \\
+    \item \url{http://moi-privivki.com/calendar/step2#birth=2012-01-01} - Backbone interactive calendar for vaccinations (developed in team)
+    \\
+    \item \url{http://svitmam.ua} - Social network for moms (made contributions)
+\end{itemize}
+See "Experience" section below for details.
+
+\section{Code examples}
+\begin{itemize}
+    \item \url{https://github.com/DarthVanger/FifteenPuzzle/wiki}
+    \\
+    \item \url{https://github.com/DarthVanger/spyoptics.kiev.ua}
+\end{itemize}
+
+\section{Experience}
+	\subsection{September 2014 till present: php \& js developer at isd-group.com - digital advertising production company}
+    Projects:
+    \begin{enumerate}
+        \item Social network for moms \url{http://svitmam.ua}. \\
+            Technologies used: require.js, gulp, redis, nodeJS, mysql, php. \\
+            Worked on: 
+            \begin{enumerate}
+                \item Embedding require.js and refactoring all js to make it work with require.js.
+                \item Embedding gulp for css \& js minification, concatenation, image lossless compression. 
+                \item Developing online users tracking with php + redis.
+                \item Developing algorithm to track posts viewed within a session, in order to build posts relation graph, using php, mysql, redis.
+                \item Fixing bugs in nodeJS based messenger.
+                \item Refactoring php code and fixing bugs.
+            \end{enumerate}
+        \item Interactive vaccination calendar \url{http://moi-privivki.com/calendar/step2#birth=2012-01-01}. \\
+            Technologies used: Laravel, backbone.js, require.js, twitter bootstrap, less. \\
+            Worked on:
+            \begin{enumerate}
+                \item Displaying and reading data from interactive calendar (using backbone.js), which has months and years columns floating around on user click.
+                \item Writing responsive html and styles based on bootstrap.
+            \end{enumerate}
+        \item Facebook web application generating a card and posting it to the timeline.
+            Worked on:
+            \begin{enumerate}
+                \item Generating images collage based on user choices, using php gd library.
+                \item Using facebook API to get friends, tag friends, and post to timeline.
+            \end{enumerate}
+        \item Fifteen puzzle javascript game \url{http://darthvanger.0fees.net/fifteen-puzzle/web} (was a test task to get the job:). \\
+            Technologies used: Symphony2, jasmine + karma for testing. \\
+            The class diagram and code can be found at \\
+            \url{https://github.com/DarthVanger/FifteenPuzzle/wiki}
+    \end{enumerate}
+
+	\subsection{2012-2014: writing websites on my own}
+	I wrote around 8 websites from scratch, mostly using CodeIgniter php framework. \\
+    Projects:
+        \begin{enumerate}
+            \item Interactive AngularJS app for calculating optical constants of thin films \\
+            \url{http://swanepoel.zz.mu}. \\
+            Technologies used: Symphony2, AngularJS, flot.js (plotting tool), handsontable.js (editable table), MathJax.js (js TeX interpreter). \\
+            Code: \url{https://github.com/DarthVanger/SwanepoelMethod} \\
+            Worked on:
+            \begin{enumerate}
+                \item Given a data set, finding extrema, building interpolation curves.
+                \item Developing UI to edit points on plot, edit data in tables.
+                \item Building linear regression, finding standard deviation, averages.
+            \end{enumerate}
+
+            \item Tiny eShop \url{http://spyoptics.kiev.ua} \\
+            Technologies used: CodeIgniter. \\
+            Code: \url{https://github.com/DarthVanger/spyoptics.kiev.ua}
+        \end{enumerate}
+
+      
+\section{Skills}
+    Symphony2, Laravel, Kohana, CodeIgniter. \\
+    Redis, Mysql. \\
+	Git, linux, vim. \\
+    Require.js, Backbone, AngularJS, underscore, jquery, nodeJS. \\
+    PhpUnit, Jasmine, Karma, Selenium (via webdriverIO). \\
+    Npm, composer, bower. \\
+    (Only used all of these, not expert at all! :) 
+\section{Education}
+	3 years in Kiev Polytechnic Institute, Applied physics. \\
+	Stanford programming methodology course (15 hours of lectures on youtube). \\
+	Epam Java web development course (100 hours in classroom). \\
+	Stackoverflow and various internet resources :)
+\section{Languages}
+	English - Upper Intermediate (around 7/10, both spoken and written).
+\section{Contact}
+	tel. 093 078 01 38 \\
+	email: ivan.sergiienko@gmail.com \\
+    github: \url{https://github.com/DarthVanger} \\
+    stackoverflow: \url{http://stackoverflow.com/users/1657101/darthvanger} \\
+    linkedin: \url{https://ua.linkedin.com/pub/ivan-sergiienko/73/94b/764}
+\section{Personal Info}
+	Age: 24 years \\
+	Residence: Kiev
+\end{document}
