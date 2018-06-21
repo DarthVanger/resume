@@ -1,0 +1,221 @@
+\documentclass[a4paper, 14pt]{article}
+
+\usepackage{soul}
+\usepackage{setspace}
+
+% package to change sections appearance
+\usepackage{titlesec}
+% package for lists
+\usepackage{enumitem}
+% reduce space before list
+\setlist{nolistsep}
+% package for inserting images
+\usepackage{graphicx}
+% package for hyperlinks
+\usepackage[colorlinks=true]{hyperref}
+
+% lists geometry
+\let\olditemize\itemize
+\renewcommand{\itemize}{
+  \olditemize
+  \setlength{\itemsep}{-8pt}
+  \setlength{\parskip}{-8pt}
+  \setlength{\parsep}{-8pt}
+}
+
+% line spacing
+\onehalfspacing
+
+% margins
+\usepackage[total={5in, 8.7in}]{geometry}
+
+% this is a global declaration that changes the appearance of the section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}
+% this is a global declaration that changes the appearance of the subsection command
+\titleformat{\subsection}{\tt\raggedright}{}{0em}{}
+
+\begin{document}
+\begin{center}
+	\textsc{\Huge{\so{Ivan Sergienko}}}
+\end{center}
+
+% photo (optional)
+%\begin{center}
+%  \includegraphics[width=130mm]{IvanSergienko.jpg}
+%\end{center}
+
+\section{Brief Summary}
+    Javascript (frontend) developer with 3 years experience.  \\
+    Also 1 year of php + js. \\
+    I love Vim, Linux, git, clean code, top-down design, SOLID, KISS.
+
+\section{Experience Summary}
+  \begin{itemize}
+    \item 1 year PHP + JS \\ 
+    \item 0.5 year Backbone + Marionette + RequireJS \\ 
+    \item 2.5 years AngularJS \\ 
+    \item A bit of NodeJS, Linux, bash, AWS, CI, Selenium
+  \end{itemize}
+
+\section{Skills}
+    Worked quite a lot with: \\
+    - AngularJS, Backbone, Marionette, RequireJS, jQuery, Bootstrap, gulp, npm. \\
+    - Vim, git, Ubuntu (as user). \\
+    \\
+    Had some experience with: \\
+    - less (css preprocessor) \\
+    - Unit testing: Jasmine, Karma. \\
+    - e2e UI testing: Protractor (Selenium Webdriver JS). \\
+    - e2e REST API testing: chai-http, mocha, superagent. \\
+    - NodeJS: express (basics), fs, yargs, winston (logger). \\
+    - PHP: Symphony2, Laravel, CodeIgniter, composer. \\
+    - DB: Mysql, Postgres, Redis. \\
+    - CI: GoCD \\
+    - Cloud: AWS ec2, Elastic Beanstalk, S3, RDS \\
+    - Linux: bash, ssh, curl, grep, sed, cut, tar \\
+    \\
+    Scratched the surface of: \\
+    - React, webpack, ES6, babel \\
+    - Angular2, TypeScript \\
+    - Docker, Ansible, GitlabCI \\
+    - Java, Spring, maven, Nexus \\
+    - Apache (httpd), Tomcat, sendmail \\
+    - ArchLinux, Xorg, openbox \\
+
+\section{Education}
+	3 years in Kiev Polytechnic Institute, Applied physics. \\
+	Stanford programming methodology course (15 hours of lectures on youtube). \\
+	Java web development live course (100 hours in a classroom).
+\section{Languages}
+	English - Upper Intermediate (around 7/10, both spoken and written).
+\section{Contact \& Profiles}
+	tel. 093 078 01 38 \\
+	email: ivan.sergiienko@gmail.com \\
+    github: \url{https://github.com/DarthVanger} \\
+    stackoverflow: \url{http://stackoverflow.com/users/1657101/darthvanger} \\
+    linkedin: \url{https://ua.linkedin.com/pub/ivan-sergiienko/73/94b/764}
+\section{Personal Info}
+	Age: 27 years \\
+	Residence: Kiev
+
+\section{Experience in detail}
+	\subsection{2016-present. Vehicles fleet management system. JS dev}
+    About the project:
+    \begin{itemize}
+      \item AngularJS + angular-ui-bootstrap. 60 screens. 20,000 lines of JS. \\
+      \item Data tables (filter, pagination, sort), CRUD for numerous entities. \\
+      \item i18n; SSO; user roles; feature flags. \\
+    \end{itemize}
+    Tech Stack:
+    \begin{itemize}
+      \item AngularJS, gulp, npm. \\
+      \item Java, Tomcat, Postgres, Redis \\
+      \item AWS Elastic Beanstalk, S3; GoCD, Kibana, New Relic. \\
+    \end{itemize}
+    Worked on: 
+    \begin{itemize}
+      \item Mostly refactoring \& support frontend; gulp build setup; some unit tests (karma + jasmine). \\
+      \item e2e Selenium tests setup \& specs (protractor + jasmine). \\
+      \item e2e REST API tests (chai-http, mocha, superagent) \\
+      \item NodeJS express server with mocks for a few REST endpoints \\
+      \item Selenium Grid on Docker (Ansible $\rightarrow$ AWS ec2). \\
+      \item Documentation (Gitlab wiki in markdown, around 20 pages) \\
+      \item Support:
+        \begin{itemize}
+          \item Monitoring, alerts, logs, charts: Kibana, New Relic \\
+          \item CI: GoCD, bash, Nexus (deploy to 6 environments) \\
+          \item AWS: Elastic Beanstalk, Postgres, Redis, S3. \\
+        \end{itemize}
+      \end{itemize}
+
+  \subsection{2015. Vacancies \& Candidates management system. JS dev}
+    About the project:
+    \begin{itemize}
+      \item Backbone + Marionette + RequireJS. \\
+      \item One page with a long list of candidates and lots of buttons. \\
+    \end{itemize}
+    Tech Stack:
+    \begin{itemize}
+      \item Backbone, Marionette, RequireJS, gulp \\
+      \item .NET, MS SharePoint, TFS, IIS \\
+    \end{itemize}
+    Worked on: 
+    \begin{itemize}
+      \item Adding features, fixing bugs, refactoring \\
+      \item Improve performance: investigation (Chrome dev tools), kill zombie views, concat html files, reduce redraw/repaint.  \\
+      \item Migrate from pure Backbone to Marionette. \\
+      \item Refactor gulpfile. \\
+    \end{itemize}
+
+  \subsection{2015. Skills quiz game. JS dev}
+    About the project:
+    \begin{itemize}
+      \item AngularJS + d3.js. \\
+      \item Website where users can take quizes on programming languages to earn points and badges. \\
+    \end{itemize}
+    Tech Stack:
+    \begin{itemize}
+      \item AngularJS, d3.js \\
+      \item .NET MVC, TFS, IIS \\
+    \end{itemize}
+    Worked on: 
+    \begin{itemize}
+      \item Developing PoC version of the app \\
+      \item Developing screens and routing logic: quiz start, win/lose, user stats \\
+      \item Developing Admin section: screens for creating questions and answer options; questions stats etc \\
+      \item Developing a few d3.js components: skills tree, animated circle progress bars, etc \\
+    \end{itemize}
+
+	\subsection{2014-2015: php \& js developer at isd-group.com - digital advertising production company}
+    Projects:
+    \begin{enumerate}
+        \item Social network for moms \url{http://svitmam.ua}. \\
+            Technologies used: require.js, gulp, redis, nodeJS, mysql, php. \\
+            Worked on: 
+            \begin{enumerate}
+                \item Embedding require.js and refactoring all js to make it work with require.js.
+                \item Embedding gulp for css \& js minification, concatenation, image lossless compression. 
+                \item Developing online users tracking with php + redis.
+                \item Developing algorithm to track posts viewed within a session, in order to build posts relation graph, using php, mysql, redis.
+                \item Fixing bugs in nodeJS based messenger.
+                \item Refactoring php code and fixing bugs.
+            \end{enumerate}
+        \item Interactive vaccination calendar \url{http://moi-privivki.com/calendar/step2#birth=5/date=2018-01-01}. \\
+            Technologies used: Laravel, backbone.js, require.js, twitter bootstrap, less. \\
+            Worked on:
+            \begin{enumerate}
+                \item Displaying and reading data from interactive calendar (using backbone.js), which has months and years columns floating around on user click.
+                \item Writing responsive html and styles based on bootstrap.
+            \end{enumerate}
+        \item Facebook web application generating a card and posting it to the timeline.
+            Worked on:
+            \begin{enumerate}
+                \item Generating images collage based on user choices, using php gd library.
+                \item Using facebook API to get friends, tag friends, and post to timeline.
+            \end{enumerate}
+        \item Fifteen puzzle javascript game \url{http://darthvanger.0fees.net/fifteen-puzzle/web} (was a test task to get the job:). \\
+            Technologies used: Symphony2, jasmine + karma for testing. \\
+            The class diagram and code can be found at \\
+            \url{https://github.com/DarthVanger/FifteenPuzzle/wiki}
+    \end{enumerate}
+
+	\subsection{2012-2014: writing websites on my own}
+	I wrote around 8 websites from scratch, mostly using CodeIgniter php framework. \\
+    Projects:
+        \begin{enumerate}
+            \item Interactive AngularJS app for calculating optical constants of thin films \\
+            Technologies used: Symphony2, AngularJS, flot.js (plotting tool), handsontable.js (editable table), MathJax.js (js TeX interpreter). \\
+            Code: \url{https://github.com/DarthVanger/SwanepoelMethod} \\
+            Worked on:
+            \begin{enumerate}
+                \item Given a data set, finding extrema, building interpolation curves.
+                \item Developing UI to edit points on plot, edit data in tables.
+                \item Building linear regression, finding standard deviation, averages.
+            \end{enumerate}
+
+            \item Tiny eShop \url{http://spyoptics.kiev.ua} \\
+            Technologies used: CodeIgniter. \\
+            Code: \url{https://github.com/DarthVanger/spyoptics.kiev.ua}
+        \end{enumerate}
+
+\end{document}
