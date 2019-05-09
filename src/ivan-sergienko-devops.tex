@@ -1,0 +1,146 @@
+\documentclass[a4paper, 14pt]{article}
+
+\usepackage{soul}
+\usepackage{setspace}
+
+% package to change sections appearance
+\usepackage{titlesec}
+% package for lists
+\usepackage{enumitem}
+% reduce space before list
+\setlist{nolistsep}
+% package for inserting images
+\usepackage{graphicx}
+% package for hyperlinks
+\usepackage[colorlinks=true]{hyperref}
+
+% disable section numbers https://tex.stackexchange.com/a/127810
+\setcounter{secnumdepth}{0}
+
+% lists geometry
+\let\olditemize\itemize
+\renewcommand{\itemize}{
+  \olditemize
+  \setlength{\itemsep}{-8pt}
+  \setlength{\parskip}{-8pt}
+  \setlength{\parsep}{-8pt}
+}
+
+% line spacing
+\onehalfspacing
+
+% margins
+\usepackage[total={5in, 8.7in}]{geometry}
+
+% this is a global declaration that changes the appearance of the section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}
+% this is a global declaration that changes the appearance of the subsection command
+\titleformat{\subsection}{\tt\raggedright}{}{0em}{}
+
+\begin{document}
+\begin{center}
+	\textsc{\Huge{\so{Ivan Sergienko}}}
+\end{center}
+
+% photo (optional)
+%\begin{center}
+%  \includegraphics[width=130mm]{IvanSergienko.jpg}
+%\end{center}
+
+\section{Brief Summary}
+  5 years experience of commercial web development. \\
+  Javascript, php, DevOps. \\
+  I love Vim, Linux, git, clean code, top-down design, SOLID, KISS.
+
+\section{Skills}
+  I'm familiar with:
+	\begin{itemize}
+		\item AWS ec2, S3, RDS, elastic beanstalk \\
+		\item git, svn, microsoft TFS version control \\
+		\item gitlab CI, GoCD \\
+		\item docker, linux, bash \\
+		\item apache http server, apache Tomcat \\
+		\item java, maven, gradle \\
+		\item javascript, nodejs, npm, webpack, grunt, gulp, react, angular \\
+		\item security: nmap, SQL and XSS injections
+	\end{itemize}
+
+\section{Experience}
+  \subsection{2016-present: Ocado Technology}
+		Working as a developer but doing some DevOps as well.
+		\subsubsection{Deploying apps}
+			\begin{itemize}
+				\item Pipelines to deploy 2 Java apps to 6 environments (using GoCD) \\
+				\item Blue-green deployment \\
+				\item Simple bash scripts \\
+				\item AWS Elastic Beanstalk \\
+				\item AWS S3: deploying app configs \\
+				\item Nexus Maven: deploying artifacts
+			\end{itemize}
+
+		\subsubsection{Deploying Selenium Grid}
+			\begin{itemize}
+				\item Using Ansible to setup Selenium Grid on ec2 instances \\
+				\item Spinning up 6 docker containers for the grid \\
+				\item Providing VNC access via ssh tunnel for the nodes \\
+				\item Debugging performance issues using sar and top \\
+				\item Writing documentation
+			\end{itemize}
+
+		\subsubsection{Deploying a library to npm}
+			\begin{itemize}
+				\item Using Gitlab CI to deploy a lib to npm, test merge requests \\
+				\item Setup semantic-release and commit message linting to enforce proper versioning and automatic changelog based on commits. \\
+				\item Create and deploy static docs website to Gitlab Pages
+			\end{itemize}
+
+		\subsubsection{Monitoring and alerting}
+			\begin{itemize}
+				\item Configuring New Relic alerts \\
+				\item Analyzing causes of issues with the apps based on New Relic data \\
+				\item Configuring CloudWatch alerts \\
+				\item Creating Kibana charts and queries \\
+				\item Configuring browser monitoring on front-end with New Relic
+			\end{itemize}
+
+		\subsubsection{Testing and development}
+			\begin{itemize}
+				\item Developing JS apps and libraries \\
+				\item Developing end-to-end REST API tests \\
+				\item Testing some endpoints for handling load \\
+				\item Developing UI end-to-end tests
+			\end{itemize}
+
+  \subsection{2014-2016: different companies}
+    Developing JS and PHP apps while working for different companies.
+
+\section{Education}
+	3 years in Kiev Polytechnic Institute, Applied physics. \\
+	Stanford programming methodology course (15 hours of lectures on youtube). \\
+	Java web development live course (100 hours in a classroom). \\
+  Internet History, Technology, and Security on Coursera (12 hours) \url{https://www.coursera.org/account/accomplishments/certificate/7AK4SUG6QVHU} \\
+  Google's XSS game \url{https://xss-game.appspot.com/}
+
+\section{Languages}
+	English - Upper Intermediate (around 7/10, both spoken and written).
+
+\section{StackOverflow reputation}
+	Stack Overflow 170 rep \\
+	Ask Ubuntu 81 rep \\
+	Vi and Vim 71 rep \\
+	Electrical Engineering 8 rep \\
+  \url{http://stackoverflow.com/users/1657101/darthvanger}
+
+\section{Github}
+  \url{https://github.com/DarthVanger}
+
+\section{Contact}
+	tel. +380930780138 (telegram preferable) \\
+	email: darthvanger@gmail.com \\
+  skype: darthvanger \\
+  linkedin: \url{https://ua.linkedin.com/pub/ivan-sergiienko/73/94b/764} \\
+\section{Personal Info}
+	Age: 28 years \\
+	Residence: Kiev, Ukraine
+
+\end{document}
